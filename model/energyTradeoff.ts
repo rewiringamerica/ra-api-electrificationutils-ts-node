@@ -19,7 +19,7 @@ import { EnergyQuantity } from './energyQuantity';
 export class EnergyTradeoff {
     'usageLevelTag': string;
     'timePeriod'?: string = 'annual';
-    'changes': Array<EnergyQuantity>;
+    'delta': Array<EnergyQuantity>;
 
     static discriminator: string | undefined = undefined;
 
@@ -35,8 +35,8 @@ export class EnergyTradeoff {
             "type": "string"
         },
         {
-            "name": "changes",
-            "baseName": "changes",
+            "name": "delta",
+            "baseName": "delta",
             "type": "Array<EnergyQuantity>"
         }    ];
 

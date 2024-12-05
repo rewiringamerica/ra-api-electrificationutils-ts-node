@@ -1,7 +1,7 @@
 export * from './gGRFHVACUpdateApi';
 import { GGRFHVACUpdateApi } from './gGRFHVACUpdateApi';
-export * from './healthDataApi';
-import { HealthDataApi } from './healthDataApi';
+export * from './healthImpactsApi';
+import { HealthImpactsApi } from './healthImpactsApi';
 export * from './rangeUpgradeApi';
 import { RangeUpgradeApi } from './rangeUpgradeApi';
 import * as http from 'http';
@@ -15,4 +15,4 @@ export class HttpError extends Error {
 
 export { RequestFile } from '../model/models';
 
-export const APIS = [GGRFHVACUpdateApi, HealthDataApi, RangeUpgradeApi];
+export const APIS = [GGRFHVACUpdateApi, HealthImpactsApi, RangeUpgradeApi];

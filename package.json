@@ -1,6 +1,6 @@
 {
     "name": "@rewiringamerica/electrificationutils",
-    "version": "0.3.1",
+    "version": "0.3.3",
     "description": "NodeJS client for electrificationutils",
     "repository": {
         "type": "git",
@@ -11,12 +11,13 @@
     "scripts": {
         "clean": "rm -Rf node_modules/ *.js",
         "build": "tsc",
-        "test": "npm run build && node dist/client.js", 
+        "test": "npm run build && node dist/client.js",
         "artifactregistry-login": "npx google-artifactregistry-auth"
     },
     "author": "OpenAPI-Generator Contributors",
     "license": "Apache-2.0",
     "dependencies": {
+        "@rewiringamerica/electrificationutils": "^0.3.3",
         "bluebird": "^3.7.2",
         "request": "^2.88.2"
     },
@@ -34,7 +35,8 @@
         "health",
         "air",
         "quality",
-        "induction"
+        "pollution",
+        "climate"
     ],
     "bugs": {
         "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID/issues"

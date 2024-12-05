@@ -16,9 +16,9 @@ import { RequestFile } from './models';
 * Enum for valid electrification upgrade options.
 */
 export enum UpgradeOption {
-    HeatPumpDryer = <any> 'heat_pump_dryer',
-    MediumEfficiencyHeatPumpBasicInsulation = <any> 'medium_efficiency_heat_pump_basic_insulation',
-    HeatPumpWaterHeater = <any> 'heat_pump_water_heater',
-    MediumEfficiencyHeatPump = <any> 'medium_efficiency_heat_pump',
+    HpDryer = <any> 'hp_dryer',
+    MedEffHpHersSizingNoSetbackBasicEnclosure = <any> 'med_eff_hp_hers_sizing_no_setback_basic_enclosure',
+    HpWaterHeater = <any> 'hp_water_heater',
+    MedEffHpHersSizingNoSetback = <any> 'med_eff_hp_hers_sizing_no_setback',
     ElectricResistanceDryer = <any> 'electric_resistance_dryer'
 }

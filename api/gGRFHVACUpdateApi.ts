@@ -94,8 +94,8 @@ export class GGRFHVACUpdateApi {
      * @summary Ggrf Hvac Upgrade Btu Per Watt Hour
      * @param electricEfficiency 
      */
-    public async ggrfHvacUpgradeBtuPerWattHourGgrfHvacUpgradeBtuPerWattHourV1Get (electricEfficiency: HvacEfficiencyElectricDetailed, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: number;  }> {
-        const localVarPath = this.basePath + '/ggrf/hvac_upgrade/btu_per_watt_hour/v1/';
+    public async ggrfHvacUpgradeBtuPerWattHour (electricEfficiency: HvacEfficiencyElectricDetailed, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: number;  }> {
+        const localVarPath = this.basePath + '/app/v1/ggrf/hvac_upgrade/btu_per_watt_hour/';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
         const produces = ['application/json'];
@@ -109,7 +109,7 @@ export class GGRFHVACUpdateApi {
 
         // verify required parameter 'electricEfficiency' is not null or undefined
         if (electricEfficiency === null || electricEfficiency === undefined) {
-            throw new Error('Required parameter electricEfficiency was null or undefined when calling ggrfHvacUpgradeBtuPerWattHourGgrfHvacUpgradeBtuPerWattHourV1Get.');
+            throw new Error('Required parameter electricEfficiency was null or undefined when calling ggrfHvacUpgradeBtuPerWattHour.');
         }
 
         if (electricEfficiency !== undefined) {
@@ -169,8 +169,8 @@ export class GGRFHVACUpdateApi {
      * @param existingEfficiencyBtuPerWattHour 
      * @param annualHvacUsageKwh 
      */
-    public async ggrfHvacUpgradeElectricToElectricGgrfHvacUpgradeElectricToElectricV1Get (locationZipCode: string, newUnitEfficiencyPercent: number, existingEfficiencyBtuPerWattHour: number, annualHvacUsageKwh: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
-        const localVarPath = this.basePath + '/ggrf/hvac_upgrade/electric-to-electric/v1/';
+    public async ggrfHvacUpgradeElectricToElectric (locationZipCode: string, newUnitEfficiencyPercent: number, existingEfficiencyBtuPerWattHour: number, annualHvacUsageKwh: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
+        const localVarPath = this.basePath + '/app/v1/ggrf/hvac_upgrade/electric_to_electric/';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
         const produces = ['application/json'];
@@ -184,22 +184,22 @@ export class GGRFHVACUpdateApi {
 
         // verify required parameter 'locationZipCode' is not null or undefined
         if (locationZipCode === null || locationZipCode === undefined) {
-            throw new Error('Required parameter locationZipCode was null or undefined when calling ggrfHvacUpgradeElectricToElectricGgrfHvacUpgradeElectricToElectricV1Get.');
+            throw new Error('Required parameter locationZipCode was null or undefined when calling ggrfHvacUpgradeElectricToElectric.');
         }
 
         // verify required parameter 'newUnitEfficiencyPercent' is not null or undefined
         if (newUnitEfficiencyPercent === null || newUnitEfficiencyPercent === undefined) {
-            throw new Error('Required parameter newUnitEfficiencyPercent was null or undefined when calling ggrfHvacUpgradeElectricToElectricGgrfHvacUpgradeElectricToElectricV1Get.');
+            throw new Error('Required parameter newUnitEfficiencyPercent was null or undefined when calling ggrfHvacUpgradeElectricToElectric.');
         }
 
         // verify required parameter 'existingEfficiencyBtuPerWattHour' is not null or undefined
         if (existingEfficiencyBtuPerWattHour === null || existingEfficiencyBtuPerWattHour === undefined) {
-            throw new Error('Required parameter existingEfficiencyBtuPerWattHour was null or undefined when calling ggrfHvacUpgradeElectricToElectricGgrfHvacUpgradeElectricToElectricV1Get.');
+            throw new Error('Required parameter existingEfficiencyBtuPerWattHour was null or undefined when calling ggrfHvacUpgradeElectricToElectric.');
         }
 
         // verify required parameter 'annualHvacUsageKwh' is not null or undefined
         if (annualHvacUsageKwh === null || annualHvacUsageKwh === undefined) {
-            throw new Error('Required parameter annualHvacUsageKwh was null or undefined when calling ggrfHvacUpgradeElectricToElectricGgrfHvacUpgradeElectricToElectricV1Get.');
+            throw new Error('Required parameter annualHvacUsageKwh was null or undefined when calling ggrfHvacUpgradeElectricToElectric.');
         }
 
         if (locationZipCode !== undefined) {
@@ -273,8 +273,8 @@ export class GGRFHVACUpdateApi {
      * @param existingConsumptionGallonsPerYear 
      * @param existingConsumptionCubicFeetPerYear 
      */
-    public async ggrfHvacUpgradeFossilToElectricGgrfHvacUpgradeFossilToElectricV1Get (locationZipCode: string, existingUnitEfficiencyStandard: HvacEfficiencyFossilFuels, newUnitEfficiencyPercent: number, existingEfficiencyBtuPerWattHour: number, existingConsumptionGallonsPerYear?: number, existingConsumptionCubicFeetPerYear?: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: HvacUpdateResults;  }> {
-        const localVarPath = this.basePath + '/ggrf/hvac_upgrade/fossil-to-electric/v1/';
+    public async ggrfHvacUpgradeFossilToElectric (locationZipCode: string, existingUnitEfficiencyStandard: HvacEfficiencyFossilFuels, newUnitEfficiencyPercent: number, existingEfficiencyBtuPerWattHour: number, existingConsumptionGallonsPerYear?: number, existingConsumptionCubicFeetPerYear?: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: HvacUpdateResults;  }> {
+        const localVarPath = this.basePath + '/app/v1/ggrf/hvac_upgrade/fossil_to_electric/';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
         const produces = ['application/json'];
@@ -288,22 +288,22 @@ export class GGRFHVACUpdateApi {
 
         // verify required parameter 'locationZipCode' is not null or undefined
         if (locationZipCode === null || locationZipCode === undefined) {
-            throw new Error('Required parameter locationZipCode was null or undefined when calling ggrfHvacUpgradeFossilToElectricGgrfHvacUpgradeFossilToElectricV1Get.');
+            throw new Error('Required parameter locationZipCode was null or undefined when calling ggrfHvacUpgradeFossilToElectric.');
         }
 
         // verify required parameter 'existingUnitEfficiencyStandard' is not null or undefined
         if (existingUnitEfficiencyStandard === null || existingUnitEfficiencyStandard === undefined) {
-            throw new Error('Required parameter existingUnitEfficiencyStandard was null or undefined when calling ggrfHvacUpgradeFossilToElectricGgrfHvacUpgradeFossilToElectricV1Get.');
+            throw new Error('Required parameter existingUnitEfficiencyStandard was null or undefined when calling ggrfHvacUpgradeFossilToElectric.');
         }
 
         // verify required parameter 'newUnitEfficiencyPercent' is not null or undefined
         if (newUnitEfficiencyPercent === null || newUnitEfficiencyPercent === undefined) {
-            throw new Error('Required parameter newUnitEfficiencyPercent was null or undefined when calling ggrfHvacUpgradeFossilToElectricGgrfHvacUpgradeFossilToElectricV1Get.');
+            throw new Error('Required parameter newUnitEfficiencyPercent was null or undefined when calling ggrfHvacUpgradeFossilToElectric.');
         }
 
         // verify required parameter 'existingEfficiencyBtuPerWattHour' is not null or undefined
         if (existingEfficiencyBtuPerWattHour === null || existingEfficiencyBtuPerWattHour === undefined) {
-            throw new Error('Required parameter existingEfficiencyBtuPerWattHour was null or undefined when calling ggrfHvacUpgradeFossilToElectricGgrfHvacUpgradeFossilToElectricV1Get.');
+            throw new Error('Required parameter existingEfficiencyBtuPerWattHour was null or undefined when calling ggrfHvacUpgradeFossilToElectric.');
         }
 
         if (locationZipCode !== undefined) {

@@ -1,9 +1,8 @@
 .gitignore
-.openapi-generator-ignore
 api.ts
 api/apis.ts
 api/gGRFHVACUpdateApi.ts
-api/healthDataApi.ts
+api/healthImpactsApi.ts
 api/rangeUpgradeApi.ts
 git_push.sh
 model/energyQuantity.ts
