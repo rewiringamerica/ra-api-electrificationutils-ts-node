@@ -95,7 +95,7 @@ export class RangeUpgradeApi {
      * @param occupants The number of occupants in the household.
      */
     public async rangeUpgrade (currentFuel: RangeFuelType, occupants: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Array<EnergyTradeoff>;  }> {
-        const localVarPath = this.basePath + '/app/v1/range_upgrade/';
+        const localVarPath = this.basePath + '/api/v1/range_upgrade/';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
         const produces = ['application/json'];

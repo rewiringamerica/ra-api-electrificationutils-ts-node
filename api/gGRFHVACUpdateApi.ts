@@ -95,7 +95,7 @@ export class GGRFHVACUpdateApi {
      * @param electricEfficiency 
      */
     public async ggrfHvacUpgradeBtuPerWattHour (electricEfficiency: HvacEfficiencyElectricDetailed, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: number;  }> {
-        const localVarPath = this.basePath + '/app/v1/ggrf/hvac_upgrade/btu_per_watt_hour/';
+        const localVarPath = this.basePath + '/api/v1/ggrf/hvac_upgrade/btu_per_watt_hour/';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
         const produces = ['application/json'];
@@ -170,7 +170,7 @@ export class GGRFHVACUpdateApi {
      * @param annualHvacUsageKwh 
      */
     public async ggrfHvacUpgradeElectricToElectric (locationZipCode: string, newUnitEfficiencyPercent: number, existingEfficiencyBtuPerWattHour: number, annualHvacUsageKwh: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: any;  }> {
-        const localVarPath = this.basePath + '/app/v1/ggrf/hvac_upgrade/electric_to_electric/';
+        const localVarPath = this.basePath + '/api/v1/ggrf/hvac_upgrade/electric_to_electric/';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
         const produces = ['application/json'];
@@ -274,7 +274,7 @@ export class GGRFHVACUpdateApi {
      * @param existingConsumptionCubicFeetPerYear 
      */
     public async ggrfHvacUpgradeFossilToElectric (locationZipCode: string, existingUnitEfficiencyStandard: HvacEfficiencyFossilFuels, newUnitEfficiencyPercent: number, existingEfficiencyBtuPerWattHour: number, existingConsumptionGallonsPerYear?: number, existingConsumptionCubicFeetPerYear?: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: HvacUpdateResults;  }> {
-        const localVarPath = this.basePath + '/app/v1/ggrf/hvac_upgrade/fossil_to_electric/';
+        const localVarPath = this.basePath + '/api/v1/ggrf/hvac_upgrade/fossil_to_electric/';
         let localVarQueryParameters: any = {};
         let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
         const produces = ['application/json'];
